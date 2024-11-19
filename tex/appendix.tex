@@ -1,0 +1,88 @@
+%-------------------------------------------------
+% FileName: appendix.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2020-05-12
+% Description: 攻读硕士学位期间发表的论文及其它成果
+% Others: 如果没有内容，就在main.tex中注释掉
+% History: origin
+%------------------------------------------------- 
+
+
+% 以下不用改动-------------------------------------
+% 断页
+% \clearpage
+
+
+
+% hyperef 精确定位
+% 设置一个anchor，主要针对\addcontentsline
+% 防止目录，书签等指向错误位置 
+% \phantomsection
+% 增加到目录，与chapter同级别
+% \addcontentsline{toc}{chapter}{\appendixname} 
+% \chapter*{} 表示不编号，不生成目录
+% \markboth 用于页眉
+% \chapter*{\appendixname \markboth{\appendixname}{}} 
+
+% 断页
+\clearpage
+
+% hyperef 精确定位
+\phantomsection
+% 增加到目录，与chapter同级别
+\addcontentsline{toc}{chapter}{攻读硕士学位期间发表的论文及其它成果}
+% \chapter*{} 表示不编号，不生成目录
+\chapter*{攻读硕士学位期间发表的论文及其它成果 \markboth{攻读硕士学位期间发表的论文及其它成果}{}}
+
+% 在此处添加发表的论文及成果列表
+% 例如:
+
+% 设置字体、字号和行距
+{\songti\zihao{-4}\linespread{1.25}\selectfont
+\setlength{\parindent}{0em}  % 将段落缩进设为 0
+
+% 定义新的环境，使用您指定的格式
+\newenvironment{achievement}
+{\begin{enumerate}[label={[\arabic*]}, align=left, leftmargin=2em, itemindent=-1.5em, labelsep=0.5em]}
+{\end{enumerate}}
+
+% 设置字体、字号和行距
+{\songti\zihao{-4}\linespread{1.25}\selectfont
+\setlength{\parindent}{0em}  % 将段落缩进设为 0
+
+\vspace{0.5\baselineskip}  % 段前 0.5 行
+\textbf{（一）发表的学术论文}
+\vspace{0.5\baselineskip}  % 段后 0.5 行
+
+\begin{achievement}
+\item ×××, ×××. 部多孔质气体静压轴向轴承静态特性的数值求解[J]. 摩擦学学报, 2007, 38(12)68~72(EI 收录号: 071510544816)
+\item 
+\end{achievement}
+
+\vspace{1em}
+
+
+
+\textbf{（二）申请及已获得的专利（无专利时此项不必列出）}
+\vspace{0.5\baselineskip}
+
+\begin{achievement}
+\item ×××, ×××. 一种温热外敷药制备方案: 中国, 88105607.3 [P]. 1989-07-26.
+\end{achievement}
+
+\vspace{1em}
+
+
+\textbf{（三）获得的科技奖励（无获奖时此项不必列出）}
+\vspace{0.5\baselineskip}
+
+\begin{achievement}
+\item ×××, ×××, ××静载下预应力混凝土房屋结构设计统一理论. 黑龙江省科学技术二等奖, 2007.
+\end{achievement}
+
+\vspace{2em}
+
+注: \,如已发表的学术论文被 EI 或 SCI 收录，请标明收录号及 SCI 论文的影响因子；对已接收但尚未发表出来的学术论文，请注明是否 EI 或 SCI 刊源。
+
+}

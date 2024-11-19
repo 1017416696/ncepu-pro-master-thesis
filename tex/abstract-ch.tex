@@ -1,0 +1,44 @@
+%-------------------------------------------------
+% FileName: abstract-ch.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2024-11-12
+% Description: 中文摘要
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+
+% 断页
+\clearpage
+% 页码从1开始计数
+\setcounter{page}{1}
+% 大写罗马数字显示页码
+\pagenumbering{Roman}
+% 加入书签, bm@abstractname要唯一
+\currentpdfbookmark{\defabstractname}{bm@abstractname}
+% 使用带页眉页脚的页面样式
+\pagestyle{myfancy}
+% \chapter*{} 表示不编号，不生成目录
+% \markboth{}{} 用于页眉
+% 此处以中文题目作为章题目
+% \chapter*{\deftitle\markboth{\defabstractname}{}}
+
+% 添加负的垂直间距，使整体向上移动
+\vspace*{-1.4cm}   % 这个值可以根据实际效果调整
+
+% 修改摘要和关键词---------------------------------
+% 中文摘要
+\abstract{
+
+摘要是论文内容的高度概括，应具有独立性和自含性，即不阅读论文的全文，就能获得必要的信息。摘要应包括本论文的目的、主要研究内容、研究方法、创造性成果及其理论与实际意义。摘要中不宜使用公式、化学结构式、图表和非公知公用的符号和术语，不标注引用文献编号。避免将摘要写成目录式的内容介绍。
+}
+
+\vspace{1em}
+
+
+% 中文关键词
+% 关键词是供检索用的主题词条，应采用能覆盖毕业设计（论文）主要内容的通用技术词条（参照相应的技术术语标准）。关键词一般为3～5个，每个关键词不超过5个字。
+\keywords{毕业设计；作品；技术；结果；意义}
+
+

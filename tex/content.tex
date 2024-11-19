@@ -1,0 +1,48 @@
+%-------------------------------------------------
+% FileName: content.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2024-11-12
+% Description: 论文目录
+% History: origin
+%-------------------------------------------------
+
+% 断页
+\clearpage
+% 加入书签, bm@contentsname要唯一
+\currentpdfbookmark{\contentsname}{bm@contentsname}
+% 添加负的垂直间距，使目录整体向上移动
+\vspace*{-1cm}   % 这个值可以根据实际效果调整
+% 生成目录
+\tableofcontents 
+
+
+
+% 断页
+% \clearpage
+% % 加入书签, bm@listfigurename要唯一
+% \currentpdfbookmark{\listfigurename}{bm@listfigurename}
+% 生成图目录
+%\listoffigures
+% {
+% % 很弱智的，为每个图目录前加上 "图"
+% \let\oldnumberline\numberline
+% \renewcommand{\numberline}{\figurename~\oldnumberline}
+% % \listoffigures
+% }
+
+
+% % 断页
+% % \clearpage
+% % % 加入书签, bm@listtablename要唯一
+% % \currentpdfbookmark{\listtablename}{bm@listtablename}
+% % 生成表目录
+% % \listoftables
+% {
+% % 很弱智的，为每个表目录前加上 "表"
+% \let\oldnumberline\numberline
+% \renewcommand{\numberline}{\tablename~\oldnumberline}
+% % \listoftables
+% }
+
+

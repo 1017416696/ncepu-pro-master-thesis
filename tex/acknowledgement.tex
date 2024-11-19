@@ -1,0 +1,36 @@
+%-------------------------------------------------
+% FileName: acknowledgement.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2024-11-12
+% Description: 致谢
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+% 以下不用改动-------------------------------------
+% 断页
+\clearpage
+% hyperef 精确定位
+% 设置一个anchor，主要针对\addcontentsline
+% 防止目录，书签等指向错误位置 
+\phantomsection
+%增加到目录，与chapter同级别
+\addcontentsline{toc}{chapter}{\defacknowledgement}
+% \chapter*{} 表示不编号，不生成目录
+% \markboth{}{} 用于页眉
+% 修改chapter*命令，在"致谢"两字之间添加空格
+\chapter*{致\hspace{1em}谢 \markboth{致\hspace{1em}谢}{}}
+% \chapter*{\defacknowledgement \markboth{\defacknowledgement}{}}
+
+% 修改{}中的内容---------------------------------
+\acknowledgement{
+
+衷心感谢导师 ××× 教授对本人的精心指导。他的言传身教将使我终生受益。
+
+感谢×××教授，以及实验室全体老师和同窗们的热情帮助和支持！
+
+本课题承蒙××××基金资助，特此致谢。
+
+} 
+

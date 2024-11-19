@@ -1,0 +1,52 @@
+%-------------------------------------------------
+% FileName: title-en.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Description: 英文扉页
+% Version: 0.1
+% Date: 2024-11-12
+% History: origin
+%-------------------------------------------------
+
+\clearpage
+\thispagestyle{empty}
+\pagestyle{empty}
+% Header alignment using tabular environment
+\noindent
+\begin{tabular*}{\textwidth}{@{\hspace{0pt}}l@{\extracolsep{\fill}}l@{\hspace{0pt}}}
+    {Classified Index: ××××}  \\
+    {U.D.C: ××××}
+\end{tabular*}
+
+\vspace{2cm}
+
+\begin{center}
+
+    {\fontspec{Times New Roman}\zihao{-2}\bfseries
+    Thesis for the Professional Master's Degree}
+    
+    \vspace{2cm}
+
+    % {\linespread{1.25}\selectfont ... \par} 来设置 1.25 倍行距
+   {\fontspec{Times New Roman}\zihao{-2}\bfseries
+    {\linespread{1.25}\selectfont
+    \hspace*{-0.8cm}
+    Research on Key Technologies of Partial Porous Externally Pressurized Gas Bearing\par}
+}
+    
+    \vspace{3cm}
+    
+     % Set line spacing to 1.5
+    \renewcommand{\arraystretch}{1.5}
+    \hspace*{-1cm}  % 添加负值的水平空间来向左移动表格 @{\hspace{0.8cm}}，它会在两列之间添加0.8厘米的间距
+        \begin{tabular}{>{\fontspec{Times New Roman}\zihao{4}}p{7cm}@{\hspace{0.7cm}}>{\fontspec{Times New Roman}\zihao{4}}l}
+        \textbf{Candidate:} & \defstudentEN \\
+        \textbf{Supervisor:} & Prof. \defadvisor \\
+        \textbf{Enterprise mentor:} & \defcoadvisorEN\space (Senior Engineer) \\
+        \textbf{Professional Degree Applied for:} & Master of \\
+        \textbf{Specialty:} & \defmajor \\
+        \textbf{Cultivation ways:} & Full-time/Part-time \\
+        \textbf{School:} & School of Electrical and Electronic Engineering \\
+        \textbf{Date of Defence:} & June, 2024 \\
+        \textbf{Degree-Conferring-Institution:} & North China Electric Power University
+    \end{tabular}
+\end{center}

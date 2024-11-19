@@ -1,0 +1,46 @@
+%-------------------------------------------------
+% FileName: frontinfo.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2024-11-12
+% Description: 封面
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+% 根据个人信息修改{}中的内容------------------------
+% 论文题目 1倍行距显示
+\mytitle{{\linespread{1}\selectfont
+局部多孔质气体静压轴承关键技术的研究\par}}
+
+
+% 英文题目  1.25 倍行距显示
+\MYTITLE{{\linespread{1.25}\selectfont
+Research on Key Technologies of Partial Porous\\  
+Externally Pressurized Gas Bearing\par}}
+
+\student{于梅} 
+
+% 如果姓名和日期间距过大，可在 style/nceputhesis.cls 文件的 615 行附近去调整
+\completedate{{\number\year}年6月} 
+
+% 以下不用改动-------------------------------------
+% 加入书签, bm@frontpage要唯一
+\currentpdfbookmark{\deffrontpage}{bm@frontpage}
+% 封面无页眉页脚 
+\thispagestyle{empty}
+% 根据以上的参数 生成标题页
+\mymaketitle
+
+% 在现有内容后添加英文信息的定义
+% 英文姓名
+\def\defstudentEN{Yu Mei}
+
+% 中文企业导师
+\def\defcoadvisor{李四}  % 将企业导师的中文名字放在这里
+% 英文企业导师
+\def\defcoadvisorEN{Li Si}  % 将企业导师的英文名字放在这里
+% 英文专业
+\def\defmajorEN{Control Engineering}
+% 英文日期
+\def\defcompletedateEN{June 2024}

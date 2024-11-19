@@ -1,0 +1,45 @@
+%-------------------------------------------------
+% FileName: title-ch.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Description: 中文扉页
+% Version: 0.1
+% Date: 2024-11-12
+% History: origin
+%-------------------------------------------------
+
+\thispagestyle{empty}
+
+% 使用 tabular 环境来实现两端对齐
+\noindent
+\begin{tabular*}{\textwidth}{@{\hspace{0pt}}l@{\extracolsep{\fill}}l@{\hspace{0pt}}}
+    {\songti \zihao{-4} 国内图书分类号：××××} & {\songti \zihao{-4} 学校代码：10054} \\
+    {\songti \zihao{-4} 国际图书分类号：××××} & {\songti \zihao{-4} 密\hspace{2em}级：公开}
+\end{tabular*}
+    
+    \vspace{3cm}
+
+\begin{center}
+
+    {\songti \zihao{-2} \bfseries 专业硕士学位论文}
+    
+    \vspace{2cm}
+    
+    {\heiti \zihao{2} \deftitle}
+    
+    \vspace{6cm}
+    
+    % 设置行距为1.5倍
+    \renewcommand{\arraystretch}{1.5}
+    \hspace*{-0.5cm}  % 添加负值的水平空间来向左移动表格
+        \begin{tabular}{>{\heiti\zihao{4}}p{4cm}@{\hspace{-1.4em}}>{\songti\zihao{4}}l}
+        \makebox[3cm][s]{硕士研究生}：\space & \defstudent \\
+        \makebox[3cm][s]{导\hspace{4em}师}：\space & \defadvisor xxx（副）教授 \\
+        \makebox[3cm][s]{企业导师}：\space & \defcoadvisor\space 高级工程师 \\
+        \makebox[3cm][s]{申请学位}：\space & **硕士 \\
+        \makebox[3cm][s]{专业领域}：\space & \defmajor \\
+        \makebox[3cm][s]{学习方式}：\space & 全日制/非全日制 \\
+        \makebox[3cm][s]{所在学院}：\space & 电气与电子工程学院 \\
+        \makebox[3cm][s]{答辩日期}：\space & 2024年6月 \\
+        \makebox[3cm][s]{授予学位单位}：\space & 华北电力大学
+    \end{tabular}
+\end{center}

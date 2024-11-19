@@ -1,0 +1,56 @@
+%-------------------------------------------------
+% FileName: zscexample.sty
+% Author: Safin (zhaoqid@zsc.edu.cn)
+% Version: 0.1
+% Date: 2020-05-12
+% Description: latex例子的源码和结果
+% Others: 参考了lsshort-zh-cn
+% History: origin 0.1
+%------------------------------------------------- 
+
+% latex 版本
+\NeedsTeXFormat{LaTeX2e}
+
+% 本文件提供的cls的名字，版本
+\ProvidesClass{zscexample}[2020/05/12 version 0.1]
+
+\RequirePackage{verbatim}
+\RequirePackage{listings}
+\RequirePackage{color, xcolor}
+
+\makeatletter
+\newwrite\example@out
+\newlength\savefboxrule
+\newlength\savefboxsep
+\edef\example@name{\jobname-example.aux}
+\newenvironment{example}%
+{\begingroup\@bsphack
+  \immediate\openout\example@out=\example@name
+  \let\do\@makeother\dospecials\catcode`\^^M\active
+  \def\verbatim@processline{\immediate\write\example@out{\the\verbatim@line}}%
+  \verbatim@start}%
+{\immediate\closeout\example@out\@esphack\endgroup%
+  \trivlist\item\relax
+  \setlength{\savefboxrule}{\fboxrule}%
+  \setlength{\savefboxsep}{\fboxsep}%
+  \setlength{\fboxsep}{0.015\textwidth}%
+  \setlength{\fboxrule}{0.4pt}%
+  \fcolorbox[gray]{0}{0.95}{%
+    \begin{minipage}[c]{0.45\textwidth}%
+      \setlength{\fboxrule}{\savefboxrule}%
+      \setlength{\fboxsep}{\savefboxsep}%
+      \small\lstinputlisting[language=TeX,frame=none]{\example@name}%
+    \end{minipage}%
+  }%
+  \hfill%
+  \fbox{%
+    \begin{minipage}[c]{0.45\textwidth}%
+      \setlength{\fboxrule}{\savefboxrule}%
+      \setlength{\fboxsep}{\savefboxsep}%
+      \setlength{\parskip}{1ex plus 0.4ex minus 0.2ex}%
+      \normalsize\input{\example@name}%
+    \end{minipage}%
+  }%
+  \endtrivlist
+}
+\makeatother

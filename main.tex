@@ -1,0 +1,39 @@
+%-------------------------------------------------
+% FileName: main.tex
+% Author: Caoxiaofan (120222327024@ncepu.edu.cn)
+% Version: 0.1
+% Date: 2024-11-12
+% Description: 华北电力大学硕士学位论文 LaTeX 模板
+% Official Format: https://yjsy.ncepu.edu.cn/zyxw/xwlw/61ab20431ff443ef989f81215c2d5973.htm
+% 在正式撰写硕士论文之前，请参考：
+% 华北电力大学研究生院官方论文格式要求：
+% https://yjsy.ncepu.edu.cn/zyxw/xwlw/61ab20431ff443ef989f81215c2d5973.htm
+
+% History: origin
+%-------------------------------------------------
+
+\documentclass{style/nceputhesis} % 自定义thesis
+
+
+
+% Latex模板撰写的论文最终输出成PDF文档，当然不可能和Word一模一样。
+
+
+\begin{document} 
+    \input{tex/frontinfo.tex}       % 封面
+    \input{tex/title-ch.tex}        % 中文扉页
+    \input{tex/title-en.tex}        % 英文扉页
+    \input{tex/declaration.tex}      % 原创性声明
+    \input{tex/abstract-ch.tex}     % 中文摘要
+    \input{tex/abstract-en.tex}     % 英文摘要
+    \input{tex/content.tex}         % 目录 (如无需要，不用修改)
+    \input{tex/chap-1.tex}          % 第1章
+    \input{tex/chap-2.tex}
+    \input{tex/chap-3.tex}          % 在 tex目录新增章节
+    \input{tex/chap-4.tex} 
+    \input{tex/chap-5.tex}
+    \input{tex/chap-6.tex}          % 第6章
+    \input{tex/reference.tex}       % 参考文献 (修改bib/ref.bib)
+    \input{tex/appendix.tex}        % 攻读硕士学位期间发表的论文及其它成果
+    \input{tex/acknowledgement.tex} % 致谢
+\end{document}
