@@ -1,10 +1,8 @@
 # 华北电力大学（北京）专业硕士学位论文 LaTeX 模板
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/1017416696/ncepu-pro-master-thesis)
-![GitHub Release](https://img.shields.io/github/v/release/1017416696/ncepu-pro-master-thesis)
 ![GitHub repo size](https://img.shields.io/github/repo-size/1017416696/ncepu-pro-master-thesis)
 ![GitHub Repo stars](https://img.shields.io/github/stars/1017416696/ncepu-pro-master-thesis)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/1017416696/ncepu-pro-master-thesis/total)
 
 这是一个用于撰写华北电力大学（北京）专业硕士学位论文的 LaTeX 模板。该模板严格按照学校最新的 [《华北电力大学硕士学位论文书写规范》](https://yjsy.ncepu.edu.cn/docs//2024-10/fdf479087edb4f54b9ebac87703079f6.doc) 和 [《华北电力大学专业硕士学位论文书写范例》](https://yjsy.ncepu.edu.cn/docs//2024-10/0bbce4267441432f876dce3fb45cda99.doc) 进行设计。
 
